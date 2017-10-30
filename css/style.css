@@ -1,0 +1,57 @@
+body{ /* 1. css add. color */
+    background-color: black;
+    text-align: center;
+}
+header{ /* 8. css add*/
+    font-family: cursive; /* 9.css add*/
+    font-size: 50px; /* 10. css add*/
+    -webkit-animation: rainbow 10s infinite; /* 11. css add*/
+}
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+
+
+#instrument{
+    display: flex;
+    height: auto;
+    width: 100%;
+    
+    align-content: center;
+    justify-content: center;
+    /* 3 & 4 css add. fontfamily and size*/
+    font-family: cursive;
+    font-size: 36px;
+}
+.box:hover{
+    box-shadow: 4px 6px 20px white;
+}
+.box:active{
+    box-shadow: 0px 0px 15px 0px white; /*8. css add*/
+}
+
+.box{
+    margin: 5px 10px 10px 5px; /* 7.customized css add*/
+    border: 1px solid black;
+    width:100px;
+    height:330px; /* 5. css add. custom height*/
+    border-radius: 15px; /* 6. css add. border raidus*/
+}
+.box{ /* 2. css add. interchanging background colors */
+    background-color: orange;
+    -webkit-animation: random 10s infinite;
+    animation: random 30s infinite;
+}
+@keyframes  random {
+   45% { background-color: red; } 
+   50% { background-color: rgba(229, 255, 0, 0.651); } 
+   40% { background-color: green; } 
+   35% { background-color: blue; }
+   28% { background-color: rgb(0, 247, 255);} 
+   20% { background-color: rgb(255, 0, 255); } 
+}
